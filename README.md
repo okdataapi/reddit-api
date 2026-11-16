@@ -2,7 +2,7 @@
 
 **Reddit data API · Reddit post search · Reddit comments and threads · subreddit posts · Reddit user profiles · Reddit trending searches.**
 
-Examples for the [okdata](https://okdata.online/?src=gh-reddit-api) Reddit API: 11 live endpoints behind one API key, pay per call from $0.002, and a failed call costs nothing. No Reddit login, no cookies and no browser, so there is no account to get blocked.
+Examples for the [okdata](https://okdata.online/?src=gh-reddit-api) Reddit API: 11 live endpoints behind one API key, pay per call from $0.002. No Reddit login, no cookies and no browser, so there is no account to get blocked.
 
 [Sign up free ($0.10 of trial credit)](https://okdata.online/signup/?src=gh-reddit-api) · [All Reddit endpoints](https://okdata.online/apis/reddit/?src=gh-reddit-api) · [Use it from Claude, Cursor or any MCP client](https://okdata.online/mcp/?src=gh-reddit-api)
 
@@ -67,7 +67,7 @@ Then ask in plain words, for example "Reddit post search: saturn rings". The age
 
 **Do I need a Reddit account?** No. The data is public content, fetched on the server; your own account is never involved.
 
-**How is it billed?** Each endpoint has its own price, listed above for one call; endpoints billed per item count what comes back. Failed calls, timeouts included, are free. New accounts get $0.10 to try; after that you top up as you go, with no subscription. Pricing: https://okdata.online/pricing/
+**How is it billed?** Each endpoint has its own price, listed above for one call; endpoints billed per item count what comes back. A call that reached the data source is charged even when it comes back empty, not found or failed (one item for per-item endpoints); calls stopped before reaching a source (bad parameters, balance) are free. New accounts get $0.10 to try; after that you top up as you go, with no subscription. Pricing: https://okdata.online/pricing/
 
 **Can I page through results?** Each page of a list is one call: pass `page.next_cursor` back as `cursor` for the next one. A cursor stays valid for 24 hours.
 
@@ -77,7 +77,7 @@ Then ask in plain words, for example "Reddit post search: saturn rings". The age
 
 **Reddit 数据 API · Reddit 帖子搜索 · Reddit 评论采集 · Reddit 社区热帖 · Reddit 用户 · Reddit 视频字幕。**
 
-okdata 的Reddit接口示例：11 个接口在线可用，一个 API Key 调用，按次计费（$0.002 起），失败不扣费，不用登录平台账号、不用 Cookie。中文文档：https://okdata.online/zh/apis/reddit/?src=gh-reddit-api · 注册：https://okdata.online/zh/signup/?src=gh-reddit-api · 接入 AI（MCP）：https://okdata.online/zh/mcp/?src=gh-reddit-api
+okdata 的Reddit接口示例：11 个接口在线可用，一个 API Key 调用，按次计费（$0.002 起），不用登录平台账号、不用 Cookie。中文文档：https://okdata.online/zh/apis/reddit/?src=gh-reddit-api · 注册：https://okdata.online/zh/signup/?src=gh-reddit-api · 接入 AI（MCP）：https://okdata.online/zh/mcp/?src=gh-reddit-api
 
 ## License
 
