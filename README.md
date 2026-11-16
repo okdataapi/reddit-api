@@ -20,7 +20,7 @@ Examples for the [okdata](https://okdata.online/?src=gh-reddit-api) Reddit API: 
 | [Reddit user profile](https://okdata.online/apis/reddit/users/get/) | A user's public profile: display name, bio, verification, karma, post and comment counts and when the account was created. | $0.002 a call | `GET /v1/reddit/users/get` |
 | [Reddit user posts](https://okdata.online/apis/reddit/users/posts/list/) | The posts a user has made, newest first: title, text, community, score and comment count. | $0.002 a call | `GET /v1/reddit/users/posts/list` |
 | [Reddit user active communities](https://okdata.online/apis/reddit/users/subreddits/list/) | The communities a user is active in, each as an account: name, description and members (in followers). The whole list in one answer. | $0.002 a call | `GET /v1/reddit/users/subreddits/list` |
-| [Reddit video transcript](https://okdata.online/apis/reddit/posts/transcript/get/) | The captions of a Reddit-hosted video post, with timestamps. A post without captions is not_found and costs nothing. | $0.004 a call | `GET /v1/reddit/posts/transcript/get` |
+| [Reddit video transcript](https://okdata.online/apis/reddit/posts/transcript/get/) | The captions of a Reddit-hosted video post, with timestamps. A post without captions comes back not_found and is charged like any lookup. | $0.004 a call | `GET /v1/reddit/posts/transcript/get` |
 
 ## Quick start
 
