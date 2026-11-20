@@ -10,17 +10,17 @@ Examples for the [okdata](https://okdata.online/?src=gh-reddit-api) Reddit API: 
 
 | Endpoint | What it returns | Price | Path |
 |---|---|---|---|
-| [Reddit post search](https://okdata.online/apis/reddit/posts/search/) | Posts matching keywords across Reddit, by relevance, newest or top score, optionally within a period: title, text, author, community, score and comment count. | $0.004 a call | `GET /v1/reddit/posts/search` |
-| [Reddit post detail](https://okdata.online/apis/reddit/posts/get/) | One post by ID or link: title, full text, author, community, score, upvote ratio and comment count. | $0.002 a call | `GET /v1/reddit/posts/get` |
-| [Reddit post comments](https://okdata.online/apis/reddit/posts/comments/list/) | Comments on a post with the first levels of replies (parent_id says which comment a reply answers): text, commenter, score and reply count. Reddit's default order, newest or top score first. | $0.002 a call | `GET /v1/reddit/posts/comments/list` |
-| [Reddit Popular feed](https://okdata.online/apis/reddit/popular/posts/list/) | The posts on Reddit's Popular feed right now, hottest first: title, community, score and comment count. | $0.002 a call | `GET /v1/reddit/popular/posts/list` |
-| [Reddit community posts](https://okdata.online/apis/reddit/subreddits/posts/list/) | A community's posts, hot, newest or top score first. Top score covers the last day unless published_within asks for a week, month, year or all time. | $0.004 a call | `GET /v1/reddit/subreddits/posts/list` |
-| [Reddit community profile](https://okdata.online/apis/reddit/subreddits/get/) | A community (subreddit) as an account: title, description, members (in followers), when it was created, and weekly visitors and contributions. | $0.002 a call | `GET /v1/reddit/subreddits/get` |
-| [Reddit trending searches](https://okdata.online/apis/reddit/trends/list/) | The searches trending on Reddit today, in the order the app lists them. | $0.002 a call | `GET /v1/reddit/trends/list` |
-| [Reddit user profile](https://okdata.online/apis/reddit/users/get/) | A user's public profile: display name, bio, verification, karma, post and comment counts and when the account was created. | $0.002 a call | `GET /v1/reddit/users/get` |
-| [Reddit user posts](https://okdata.online/apis/reddit/users/posts/list/) | The posts a user has made, newest first: title, text, community, score and comment count. | $0.002 a call | `GET /v1/reddit/users/posts/list` |
-| [Reddit user active communities](https://okdata.online/apis/reddit/users/subreddits/list/) | The communities a user is active in, each as an account: name, description and members (in followers). The whole list in one answer. | $0.002 a call | `GET /v1/reddit/users/subreddits/list` |
-| [Reddit video transcript](https://okdata.online/apis/reddit/posts/transcript/get/) | The captions of a Reddit-hosted video post, with timestamps. A post without captions comes back not_found and is charged like any lookup. | $0.004 a call | `GET /v1/reddit/posts/transcript/get` |
+| [Reddit post search](https://okdata.online/apis/reddit/posts/search/?src=gh-reddit-api) | Posts matching keywords across Reddit, by relevance, newest or top score, optionally within a period: title, text, author, community, score and comment count. | $0.004 a call | `GET /v1/reddit/posts/search` |
+| [Reddit post detail](https://okdata.online/apis/reddit/posts/get/?src=gh-reddit-api) | One post by ID or link: title, full text, author, community, score, upvote ratio and comment count. | $0.002 a call | `GET /v1/reddit/posts/get` |
+| [Reddit post comments](https://okdata.online/apis/reddit/posts/comments/list/?src=gh-reddit-api) | Comments on a post with the first levels of replies (parent_id says which comment a reply answers): text, commenter, score and reply count. Reddit's default order, newest or top score first. | $0.002 a call | `GET /v1/reddit/posts/comments/list` |
+| [Reddit Popular feed](https://okdata.online/apis/reddit/popular/posts/list/?src=gh-reddit-api) | The posts on Reddit's Popular feed right now, hottest first: title, community, score and comment count. | $0.002 a call | `GET /v1/reddit/popular/posts/list` |
+| [Reddit community posts](https://okdata.online/apis/reddit/subreddits/posts/list/?src=gh-reddit-api) | A community's posts, hot, newest or top score first. Top score covers the last day unless published_within asks for a week, month, year or all time. | $0.004 a call | `GET /v1/reddit/subreddits/posts/list` |
+| [Reddit community profile](https://okdata.online/apis/reddit/subreddits/get/?src=gh-reddit-api) | A community (subreddit) as an account: title, description, members (in followers), when it was created, and weekly visitors and contributions. | $0.002 a call | `GET /v1/reddit/subreddits/get` |
+| [Reddit trending searches](https://okdata.online/apis/reddit/trends/list/?src=gh-reddit-api) | The searches trending on Reddit today, in the order the app lists them. | $0.002 a call | `GET /v1/reddit/trends/list` |
+| [Reddit user profile](https://okdata.online/apis/reddit/users/get/?src=gh-reddit-api) | A user's public profile: display name, bio, verification, karma, post and comment counts and when the account was created. | $0.002 a call | `GET /v1/reddit/users/get` |
+| [Reddit user posts](https://okdata.online/apis/reddit/users/posts/list/?src=gh-reddit-api) | The posts a user has made, newest first: title, text, community, score and comment count. | $0.002 a call | `GET /v1/reddit/users/posts/list` |
+| [Reddit user active communities](https://okdata.online/apis/reddit/users/subreddits/list/?src=gh-reddit-api) | The communities a user is active in, each as an account: name, description and members (in followers). The whole list in one answer. | $0.002 a call | `GET /v1/reddit/users/subreddits/list` |
+| [Reddit video transcript](https://okdata.online/apis/reddit/posts/transcript/get/?src=gh-reddit-api) | The captions of a Reddit-hosted video post, with timestamps. A post without captions comes back not_found and is charged like any lookup. | $0.004 a call | `GET /v1/reddit/posts/transcript/get` |
 
 ## Quick start
 
@@ -67,11 +67,11 @@ Then ask in plain words, for example "Reddit post search: saturn rings". The age
 
 **Do I need a Reddit account?** No. The data is public content, fetched on the server; your own account is never involved.
 
-**How is it billed?** Each endpoint has its own price, listed above for one call; endpoints billed per item count what comes back. New accounts get $0.10 to try; after that, top-ups start at $10 and never expire, with no subscription. Pricing: https://okdata.online/pricing/ · Billing details: https://okdata.online/docs/billing/
+**How is it billed?** Each endpoint has its own price, listed above for one call; endpoints billed per item count what comes back. New accounts get $0.10 to try; after that, top-ups start at $10 and never expire, with no subscription. Pricing: https://okdata.online/pricing/?src=gh-reddit-api · Billing details: https://okdata.online/docs/billing/?src=gh-reddit-api
 
 **Can I page through results?** Each page of a list is one call: pass `page.next_cursor` back as `cursor` for the next one. A cursor stays valid for 24 hours.
 
-**What happens when a call fails?** Every error has a fixed `code`, a `message`, and says whether you were charged (`charged`) and whether to retry (`retry`). All error codes: https://okdata.online/docs/errors/
+**What happens when a call fails?** Every error has a fixed `code`, a `message`, and says whether you were charged (`charged`) and whether to retry (`retry`). All error codes: https://okdata.online/docs/errors/?src=gh-reddit-api
 
 ## 中文说明
 
