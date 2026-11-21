@@ -4,7 +4,7 @@
 
 Examples for the [okdata](https://okdata.online/?src=gh-reddit-api) Reddit API: 11 live endpoints behind one API key, pay per call from $0.002. No Reddit login, no cookies and no browser, so there is no account to get blocked.
 
-[Sign up free ($0.10 of trial credit)](https://okdata.online/signup/?src=gh-reddit-api) · [All Reddit endpoints](https://okdata.online/apis/reddit/?src=gh-reddit-api) · [Use it from Claude, Cursor or any MCP client](https://okdata.online/mcp/?src=gh-reddit-api)
+[Sign up free (free trial: up to 333 calls)](https://okdata.online/signup/?src=gh-reddit-api) · [All Reddit endpoints](https://okdata.online/apis/reddit/?src=gh-reddit-api) · [Use it from Claude, Cursor or any MCP client](https://okdata.online/mcp/?src=gh-reddit-api)
 
 ## Endpoints
 
@@ -67,7 +67,7 @@ Then ask in plain words, for example "Reddit post search: saturn rings". The age
 
 **Do I need a Reddit account?** No. The data is public content, fetched on the server; your own account is never involved.
 
-**How is it billed?** Each endpoint has its own price, listed above for one call; endpoints billed per item count what comes back. New accounts get $0.10 to try; after that, top-ups start at $10 and never expire, with no subscription. Pricing: https://okdata.online/pricing/?src=gh-reddit-api · Billing details: https://okdata.online/docs/billing/?src=gh-reddit-api
+**How is it billed?** Each endpoint has its own price, listed above for one call; endpoints billed per item count what comes back. New accounts get a free trial of up to 333 calls; after that, top-ups start at $10 and never expire, with no subscription. Pricing: https://okdata.online/pricing/?src=gh-reddit-api · Billing details: https://okdata.online/docs/billing/?src=gh-reddit-api
 
 **Can I page through results?** Each page of a list is one call: pass `page.next_cursor` back as `cursor` for the next one. A cursor stays valid for 24 hours.
 
